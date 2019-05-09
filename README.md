@@ -20,7 +20,10 @@ npm install
 
 ## Executando os testes
 
-Example
+```
+npm run test
+```
+
 
 ## Construído com 
 
