@@ -1,16 +1,16 @@
 # Unindo Conceitos https://www.udemy.com/js-com-tdd-na-pratica/
 
-Projeto para uniar conceitos e práticas do curso https://www.udemy.com/js-com-tdd-na-pratica/
+Projeto para unir conceitos e práticas do curso https://www.udemy.com/js-com-tdd-na-pratica/
 
-## Getting Started
+## Iniciando
 
 Esse projeto tem como objetivo fins de estudo e aperfeiçoamento em TDD 
 
-### Prerequisities
+### Pré-requisitos
 
 Necessário ter [NodeJS](https://nodejs.org/en/) instalado no mínimo na versão LTS
 
-### Installing
+### Instalando
 
 Na pasta base do projeto instalar as dependências com:
 
