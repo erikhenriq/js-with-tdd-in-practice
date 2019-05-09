@@ -9,7 +9,7 @@
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
     "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register -- --reporter=progress",
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register -- --reporter=progress -- --bail",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
   },
