@@ -1,28 +1,29 @@
 /* import { expect  } from 'chai'; */
 
 describe('Main', () => {
-/*     describe('Method A', () => {
-        context('Case 1', () => {
-            it('should happen something from Case 1', () => {
-
-                throw new Error('Just some error')
+    let arr;
+    /*     describe('Method A', () => {
+            context('Case 1', () => {
+                it('should happen something from Case 1', () => {
+    
+                    throw new Error('Just some error')
+                });
             });
+    
+            context('Case 2', () => {
+                it('should happen something from Case 2', () => {
+                    throw new Error('Just some other error')
+                });
+    
+                it('should happen other something from Case 2', () => {
+    
+                });
+            })
         });
-
-        context('Case 2', () => {
-            it('should happen something from Case 2', () => {
-                throw new Error('Just some other error')
-            });
-
-            it('should happen other something from Case 2', () => {
-
-            });
-        })
-    });
-
-    describe('Method B', () => {
-
-    }); */
+    
+        describe('Method B', () => {
+    
+        }); */
 
 
     before(() => {
@@ -35,17 +36,27 @@ describe('Main', () => {
 
     beforeEach(() => {
         console.log('beforeEach')
+        arr = [1, 2, 3];
     });
 
     afterEach(() => {
         console.log('afterEach')
     });
 
-    it('Test 1', () => {
-        console.log('Test 1')
+    it('should have a size of 4 when oush another value to the array', () => {
+        arr.push(4);
+
+        console.log(arr.length);
     });
 
-    it('Test 2', () => {
-        console.log('Test 2')
+    it('should have a size of 2 when pop a value from the array', () => {
+        arr.pop();
+
+        console.log(arr.length);
+    });
+
+    it('should remove the value 3 when use pop in the array', () => {
+
+        console.log(arr.pop() === 3);
     });
 });
