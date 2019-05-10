@@ -1,4 +1,27 @@
 const expect = require('chai').expect;
+const calc = require('../src/main.js');
+
+describe('Smoke tests', () => {
+    it('should exist the calc lib', () => {
+        expect(calc).to.exist;
+    });
+
+    it('should exist the method `sum`', () => {
+        expect(calc.sum).to.be.a.instanceOf(Function);
+    });
+
+    it('should exist the method `sub`', () => {
+        expect(calc.sub).to.be.a.instanceOf(Function);
+    });
+
+    it('should exist the method `mult`', () => {
+        expect(calc.mult).to.be.a.instanceOf(Function);
+    });
+
+    it('should exist the method `div`', () => {
+        expect(calc.div).to.be.a.instanceOf(Function);
+    });
+});
 
 describe('Main', () => {
     let arr;
