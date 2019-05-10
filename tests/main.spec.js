@@ -1,62 +1,28 @@
-/* import { expect  } from 'chai'; */
+const expect = require('chai').expect;
 
 describe('Main', () => {
     let arr;
-    /*     describe('Method A', () => {
-            context('Case 1', () => {
-                it('should happen something from Case 1', () => {
-    
-                    throw new Error('Just some error')
-                });
-            });
-    
-            context('Case 2', () => {
-                it('should happen something from Case 2', () => {
-                    throw new Error('Just some other error')
-                });
-    
-                it('should happen other something from Case 2', () => {
-    
-                });
-            })
-        });
-    
-        describe('Method B', () => {
-    
-        }); */
-
-
-    before(() => {
-        console.log('before')
-    });
-
-    after(() => {
-        console.log('after')
-    });
 
     beforeEach(() => {
-        console.log('beforeEach')
         arr = [1, 2, 3];
-    });
-
-    afterEach(() => {
-        console.log('afterEach')
     });
 
     it('should have a size of 4 when oush another value to the array', () => {
         arr.push(4);
-
-        console.log(arr.length);
-    });
-
-    it('should have a size of 2 when pop a value from the array', () => {
-        arr.pop();
-
-        console.log(arr.length);
+        expect(arr).to.have.lengthOf(4);
     });
 
     it('should remove the value 3 when use pop in the array', () => {
+        arr.pop();
+        expect(arr).to.not.include(3);
+    });
 
-        console.log(arr.pop() === 3);
+    it('should return true when pop 3 from the array', () => {
+        expect(arr.pop() === 3).to.be.true;
+    })
+
+    it('should have a size of 2 when pop a value from the array', () => {
+        arr.pop();
+        expect(arr).to.has.lengthOf(2);
     });
 });
