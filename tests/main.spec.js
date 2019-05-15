@@ -1,58 +1,55 @@
-const expect = require('chai').expect;
-const calc = require('../src/main.js');
+import { expect } from 'chai'
+import { sum, sub, mult, div } from '../src/main';
 
 describe('Smoke tests', () => {
-    it('should exist the calc lib', () => {
-        expect(calc).to.exist;
-    });
 
     it('should exist the method `sum`', () => {
-        expect(calc.sum).to.be.a.instanceOf(Function);
+        expect(sum).to.be.a.instanceOf(Function);
     });
 
     it('should exist the method `sub`', () => {
-        expect(calc.sub).to.be.a.instanceOf(Function);
+        expect(sub).to.be.a.instanceOf(Function);
     });
 
     it('should exist the method `mult`', () => {
-        expect(calc.mult).to.be.a.instanceOf(Function);
+        expect(mult).to.be.a.instanceOf(Function);
     });
 
     it('should exist the method `div`', () => {
-        expect(calc.div).to.be.a.instanceOf(Function);
+        expect(div).to.be.a.instanceOf(Function);
     });
 });
 
 describe('Sum', () => {
     it('should return 4 when `sum(2,2)`', () => {
-        expect(calc.sum(2,2)).to.be.equal(4);
+        expect(sum(2, 2)).to.be.equal(4);
     })
 });
 
 describe('Sub', () => {
     it('should return 4 when `sub(6,2)`', () => {
-        expect(calc.sub(6,2)).to.be.equal(4);
+        expect(sub(6, 2)).to.be.equal(4);
     })
 
     it('should return -4 when `sub(6,10)`', () => {
-        expect(calc.sub(6,10)).to.be.equal(-4);
+        expect(sub(6, 10)).to.be.equal(-4);
     })
 });
 
 describe('Mult', () => {
     it('should return 4 when `mult(2,2)`', () => {
-        expect(calc.mult(2,2)).to.be.equal(4);
+        expect(mult(2, 2)).to.be.equal(4);
     })
 });
 
 
 describe('Div', () => {
     it('should return 2 when `div(4,2)`', () => {
-        expect(calc.div(4,2)).to.be.equal(2);
+        expect(div(4, 2)).to.be.equal(2);
     })
 
     it('should return `not possible divide by 0` when `div(4,2)`', () => {
-        expect(calc.div(4,0)).to.be.equal('not possible divide by 0');
+        expect(div(4, 0)).to.be.equal('not possible divide by 0');
     })
 });
 
