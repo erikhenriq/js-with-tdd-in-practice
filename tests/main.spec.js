@@ -42,7 +42,6 @@ describe('Mult', () => {
     })
 });
 
-
 describe('Div', () => {
     it('should return 2 when `div(4,2)`', () => {
         expect(div(4, 2)).to.be.equal(2);
@@ -53,9 +52,7 @@ describe('Div', () => {
     })
 });
 
-
-
-/* describe('Main', () => {
+describe('Main', () => {
     let arr;
 
     beforeEach(() => {
@@ -81,5 +78,3 @@ describe('Div', () => {
         expect(arr).to.has.lengthOf(2);
     });
 });
-
- */
