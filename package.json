@@ -8,12 +8,15 @@
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
+    "prepush": "npm run test:coverage",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register -- --bail",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
   },
   "nyc": {
+    "functions": "80",
+    "lines": "60",
+    "check-coverage": true,
     "reporter": [
       "text",
       "html"
@@ -45,12 +48,15 @@
     "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
     "husky": "2.2.0",
     "mocha": "6.1.4",
     "nyc": "14.1.0",
     "rimraf": "2.6.3"
   },
   "dependencies": {
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "eslint-config-airbnb": "^17.1.0"
   }
 }
