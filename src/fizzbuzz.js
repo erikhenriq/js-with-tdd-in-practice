@@ -20,5 +20,4 @@ function foo() {
   return 'blah';
 }
 
-foo();
 export default FizzBuzz;
