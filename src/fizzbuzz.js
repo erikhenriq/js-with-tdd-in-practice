@@ -16,20 +16,4 @@ const FizzBuzz = (num) => {
   return num;
 };
 
-function foo() {
-  return 'blah';
-}
-
-function foo1() {
-  return 'blah';
-}
-
-function foo2() {
-  return 'blah';
-}
-
-function foo3() {
-  return 'blah';
-}
-
 export default FizzBuzz;
