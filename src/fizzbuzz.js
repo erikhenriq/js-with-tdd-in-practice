@@ -1,4 +1,6 @@
 const FizzBuzz = (num) => {
+    if (num === 0) return 0;
+
     if (num % 5 === 0 && num % 3 === 0) {
         return 'FizzBuzz';
     }
