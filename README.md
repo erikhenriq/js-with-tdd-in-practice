@@ -1,4 +1,4 @@
-# Unindo Conceitos https://www.udemy.com/js-com-tdd-na-pratica/
+# Unindo Conceitos
 
 Projeto para unir conceitos e práticas do curso https://www.udemy.com/js-com-tdd-na-pratica/
 
